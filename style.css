@@ -3,3 +3,7 @@
     color-scheme: dark;
     text-align: center;
 }
+ul
+{
+    list-style-type: none;
+}
