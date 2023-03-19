@@ -8,8 +8,8 @@
     <script src="script.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <H1>Formularz</H1>
+<body onload="random_meter()">
+    <H1>Form</H1>
         <form action="" method="get">
         <label for="Surname">Surname</label>
         <input type="text" name="Surname" id="Surname" required>
@@ -52,25 +52,23 @@
                 <input type="checkbox" name="Ruby" id="Ruby">
             </li>
         </ul>
-        <label for="gender">Your gender:</label>
-            <input list="genders" name="gender" id="gender">
-            <datalist id="genders">
+        <label for="sex">Your sex:</label>
+            <input list="sexes" name="sex" id="sex">
+            <datalist id="sexes">
                 <option value="Male">
                 <option value="Female">
-                <option value="Other">
             </datalist>
         <br>
         <input type="button" class="popup" value="Education" onclick="toggle_education()">
         <div id="education" style="display: none;">
             <label for="startDate">Start Date</label>
-            <input type="date" name="startDate" id="startDate">
+            <input type="date" name="startDate" id="startDate" required>
             <br>
             <label for="endDate">End Date</label>
-            <input type="date" name="endDate" id="endDate">
+            <input type="date" name="endDate" id="endDate" required>
         </div>
         <br>
-        <H1>TRZEBA JESZCZE DODAC METER</H1>
-        <meter hidden ></meter>
+        <meter min="1" max="10" id="meter" hidden></meter>
         <br>
         <input type="submit" value="Submit">
     </form>
