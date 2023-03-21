@@ -1,0 +1,38 @@
+:root
+{
+    color-scheme: dark;
+}
+body
+{
+    background-color: darkslategrey;
+    background-image: url("webb.jpg"), url("saturnv.jpg");
+    background-repeat:no-repeat, repeat-x;
+    background-size: 50%, 50%;
+}
+p
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    color: blue;
+    background-color: yellow;
+    text-align: justify;
+}
+p.first
+{
+    word-spacing:10px;
+    letter-spacing: 5px;
+}
+title
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+div
+{
+    border-style: outset;
+    border-width: 10pt 5pt 10pt 5pt;
+    border-color: green;
+}
